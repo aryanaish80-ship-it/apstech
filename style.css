@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background: linear-gradient(to right, #ffcccc, #ffe6e6);
 }
 
@@ -14,7 +14,7 @@ h1 {
 }
 
 input {
-    padding: 10px;
+    padding: 12px;
     width: 60%;
     font-size: 16px;
     border-radius: 10px;
@@ -33,10 +33,22 @@ button {
     background-color: #ff6666;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
     background-color: #cc0000;
+}
+
+#loading {
+    display: none;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #990000;
+}
+
+#output {
+    margin-top: 20px;
 }
 
 #output img {
@@ -46,6 +58,6 @@ button:hover {
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
